@@ -35,10 +35,10 @@ let bigWord = array[0];
 let smallWord = array[0];
 let palavra = [];
 for (let index = 0; index < array.length; index += 1) {
-    palavra = array[index];    
+    palavra = array[index];
     if (palavra.length > bigWord.length) {
         bigWord = palavra;
-    } else if (palavra.length < smallWord.length){
+    } else if (palavra.length < smallWord.length) {
         smallWord = palavra;
     }
 }
@@ -46,3 +46,18 @@ console.log(bigWord);
 console.log(smallWord);
 console.log();
 console.log('4 - Um número primo é aquele divisível apenas por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50.');
+console.log();
+
+let nPrimo = 50;
+let contador = 0;
+for(let index2 = nPrimo; index2 > 0; index2 -= 1){
+    for (let index3 = 0; index3 < index2; index3 += 1){
+        if( index3%index2 === 1){
+            contador += 1;
+        }
+    }
+    if(contador<3){
+        nPrimo = index2;
+    }
+}
+console.log(nPrimo);
