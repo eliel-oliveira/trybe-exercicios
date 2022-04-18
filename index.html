@@ -1,0 +1,47 @@
+<html>
+
+<body>
+    <header>
+        <h2 id="page-title">Título</h2>
+        <p class='par' id="paragraph">Dê uma cor para este parágrafo!</p>
+        <h4 id="subtitle">Subtítulo</h4>
+        <p class='par' id="second-paragraph">Segundo parágrafo!</p>
+        <p>
+        <ol>
+            <li>Recupere o elemento que contém o título da página e faça algo com ele, como alterá-lo para o nome do seu
+                filme favorito.</li>
+
+            <li>Agora recupere o segundo parágrafo e use sua criatividade para alterá-lo.</li>
+
+            <li>Por fim, recupere o subtítulo e altere-o também.</li>
+
+            <li>Adicione uma classe igual para os dois parágrafos.</li>
+
+            <li> Recupere os seus parágrafos via código JavaScript , usando a função getElementsByClassName ;</li>
+
+            <li> Altere algum estilo do primeiro deles.</li>
+
+            <li> Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName .</li>
+
+        </ol>
+        </p>
+    </header>
+    <script>
+        const paragraph = document.getElementById("paragraph");
+        paragraph.style.color = "red";
+        document.getElementById('page-title').innerText = 'Interestellar';
+        document.getElementById('paragraph').innerText = 'Este texto foi subistituído com sucesso!';
+        document.getElementById('subtitle').innerText = 'Este também não ficou de fora';
+        document.getElementsByClassName('par')[0].innerHTML = 'este texto foi alterado 2 vezes'
+        document.getElementsByClassName('par')[1].style.color = 'green';
+        document.getElementsByTagName('p')[0].style.fontSize = '30';
+        document.querySelector('ol').style.backgroundColor = 'yellow';
+        
+        let teste = document.querySelectorAll('li');
+        for (let index = 0; index < teste.length; index += 1){
+            teste[index].style.fontSize = 18;
+        }
+    </script>
+</body>
+
+</html>
