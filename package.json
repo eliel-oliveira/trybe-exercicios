@@ -1,0 +1,23 @@
+{
+  "name": "trybe-exercicios",
+  "version": "1.0.0",
+  "description": "Repositorio de exercicios Trybe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliel-oliveira/trybe-exercicios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliel-oliveira/trybe-exercicios/issues"
+  },
+  "homepage": "https://github.com/eliel-oliveira/trybe-exercicios#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
