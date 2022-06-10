@@ -1,1 +1,0 @@
-Repositorio de exercicios Trybe
